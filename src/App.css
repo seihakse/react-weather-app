@@ -28,13 +28,14 @@ body {
     align-items: center;
     max-width: 90%;
     width: 100%;
-    min-height: 40px;
-    background-color: rgb(90, 185, 230);
+    min-height: 440px;
     text-align: center;
     margin: 8vh auto;
     border-radius: 10px;
     padding: 32px 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	-webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Apply blur effect */
 }
 
 .city-search {
@@ -52,7 +53,7 @@ body {
 }
 
 .city-search:focus {
-    border-color: rgb(34, 157, 214);
+    border-color: whitesmoke;
 }
 
 .city-name {
@@ -87,7 +88,7 @@ body {
 .error-message {
     display: block;
     text-align: center;
-    color: lightgreen;
+    color: lightyellow;
     font-size: 24px;
     margin-top: auto;
 }
