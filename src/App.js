@@ -2,10 +2,10 @@ import{ Oval } from 'react-loader-spinner';
 import React, {useState} from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFrown } from '@fortawesome/free-solid-svg-icons';
+import { faSmile } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
-function GfGWeatherApp() {
+function WeatherApp() {
   const [input, setInput] = useState('');
   const [weather, setWeather] = useState({
     loading: false,
@@ -71,7 +71,7 @@ function GfGWeatherApp() {
   return (
     <div className='App'>
       <h1 className='app-name'>
-        Seihak Weather App
+        Weather App
       </h1>
       <div className='search-bar'>
         <input
@@ -96,8 +96,8 @@ function GfGWeatherApp() {
           <br />
           <br />
           <span className='error-message'>
-            <FontAwesomeIcon icon={faFrown} />
-            <span style={{fontSize: '20px'}}>City not found</span>
+            <FontAwesomeIcon icon={faSmile} />
+            <span style={{fontSize: '20px'}}>City found</span>
           </span>
         </>
       )}
@@ -129,4 +129,4 @@ function GfGWeatherApp() {
   </div>
   );
 }
-export default GfGWeatherApp;
+export default WeatherApp;
